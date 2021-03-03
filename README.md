@@ -2,7 +2,7 @@
   
 a really really simple frame to develop console game  
   
-- games witch were developed by this frame  
+- games witch were developed by this frame
     - CLI_GAME (with frame in v1.0)  
     https://github.com/HIBICUSbaka/CLI_Game  
     - VIRTUAL RESORTER (with frame in v2.0)  
@@ -18,7 +18,7 @@ a really really simple frame to develop console game
     so before you build executable file and run it, please copy CLIG\\CLIG_FRAME\\Assets\\Libs\\MariaDB Connector C\\lib\\libmariadb.dll  
     to the folder you going to build in  
   
-- the function included in this frame  
+- the function included in this frame
     - a main loop by GameApp.h  
     - a fast way to print by ConsolePrint.h (in black-white way, you can show colorful things by AppPostPrint() in CustomizedApp.h, but usually it cannot be fully printed by 60 fps)  
     - serval customizable function in CustomizedApp.h, you can do game's initialize, updating, dispatching of keyboard input and button event, post printing and turning off here  
@@ -27,7 +27,7 @@ a really really simple frame to develop console game
     - a simple solution to manage a part of game in scene by SceneNode.h and SceneManager.h  
     - a way to show ascii sprite or sprite animate (this is used widly in the scecond game https://github.com/HIBICUSbaka/HEW_GAME )  
   
-- filters in the project file  
+- filters in the project file
     - Source and Header: the basic parts of this frame  
     - GameApp: advanced function witch base on basic parts  
     - GameScene: to hold the declarations of each scene  
