@@ -1,6 +1,6 @@
-//------------------------------------------------------------------------
-// �t�@�C����: AppDeclared.h
-// �@�\: �g���v�f�Ɋւ��Ă̒l�̐���
+﻿//------------------------------------------------------------------------
+// ファイル名: AppDeclared.h
+// 機能: 拡張要素に関しての値の声明
 //------------------------------------------------------------------------
 
 #pragma once
@@ -10,27 +10,27 @@
 #define SCENENODESIZE 20
 
 /// <summary>
-/// �V�[���z����擾
+/// シーン配列を取得
 /// </summary>
-/// <returns>�V�[���z��</returns>
+/// <returns>シーン配列</returns>
 SCENENODE* GetSceneNodeArray();
 
 /// <summary>
-/// �V�[���z���ݒ�
+/// シーン配列を設定
 /// </summary>
-/// <param name="index">�V�[���̕Έڗ�</param>
-/// <param name="temp">�Վ��I�ȃV�[������</param>
+/// <param name="index">シーンの偏移量</param>
+/// <param name="temp">臨時的なシーン声明</param>
 void SetSceneNodeArray(int index, SCENENODE temp);
 
 /// <summary>
-/// �g���Ă���V�[����ݒ�
+/// 使っているシーンを設定
 /// </summary>
-/// <param name="sceneNode">�V�[���w���̃|�C���^</param>
+/// <param name="sceneNode">シーン指向のポインタ</param>
 void SetCurrScene(SCENENODE* sceneNode);
 
 /// <summary>
-/// �g���Ă���V�[�����擾
+/// 使っているシーンを取得
 /// </summary>
-/// <returns>�V�[���w���̃|�C���^</returns>
+/// <returns>シーン指向のポインタ</returns>
 SCENENODE* GetCurrScene();
 

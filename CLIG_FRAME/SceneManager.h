@@ -1,6 +1,6 @@
-//------------------------------------------------------------------------
-// ƒtƒ@ƒCƒ‹–¼: SceneManager.h
-// ‹@”\: ‘S‚Ä‚ÌƒV[ƒ“‚ðŠÇ—‚·‚é‹@”\
+ï»¿//------------------------------------------------------------------------
+// ãƒ•ã‚¡ã‚¤ãƒ«å: SceneManager.h
+// æ©Ÿèƒ½: å…¨ã¦ã®ã‚·ãƒ¼ãƒ³ã‚’ç®¡ç†ã™ã‚‹æ©Ÿèƒ½
 //------------------------------------------------------------------------
 
 #pragma once
@@ -9,35 +9,35 @@
 #define TESTSCENEFLAG 1
 
 /// <summary>
-/// ƒV[ƒ“‚Ì‚µ‚é‚µŽæ“¾
+/// ã‚·ãƒ¼ãƒ³ã®ã—ã‚‹ã—å–å¾—
 /// </summary>
-/// <returns>ƒV[ƒ“‚Ì‹L†</returns>
+/// <returns>ã‚·ãƒ¼ãƒ³ã®è¨˜å·</returns>
 int GetSceneFlag();
 
 /// <summary>
-/// ¡Žg‚Á‚Ä‚¢‚éƒV[ƒ“‚ðÝ’è
+/// ä»Šä½¿ã£ã¦ã„ã‚‹ã‚·ãƒ¼ãƒ³ã‚’è¨­å®š
 /// </summary>
-/// <param name="sceneNode">ƒV[ƒ“ŽwŒü‚Ìƒ|ƒCƒ“ƒ^</param>
+/// <param name="sceneNode">ã‚·ãƒ¼ãƒ³æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</param>
 void SetManagedCurrScene(SCENENODE* sceneNode);
 
 /// <summary>
-/// ¡Žg‚Á‚Ä‚¢‚éƒV[ƒ“‚ðŽæ“¾
+/// ä»Šä½¿ã£ã¦ã„ã‚‹ã‚·ãƒ¼ãƒ³ã‚’å–å¾—
 /// </summary>
-/// <returns>ƒV[ƒ“ŽwŒü‚Ìƒ|ƒCƒ“ƒ^</returns>
+/// <returns>ã‚·ãƒ¼ãƒ³æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</returns>
 SCENENODE* GetManagedCurrScene();
 
 /// <summary>
-/// Žg‚Á‚Ä‚¢‚éƒV[ƒ“‚ð‰Šú‰»‚·‚é
+/// ä½¿ã£ã¦ã„ã‚‹ã‚·ãƒ¼ãƒ³ã‚’åˆæœŸåŒ–ã™ã‚‹
 /// </summary>
 void InitCurrScene();
 
 /// <summary>
-/// Žg‚Á‚Ä‚¢‚éƒV[ƒ“‚ðXV‚·‚é
+/// ä½¿ã£ã¦ã„ã‚‹ã‚·ãƒ¼ãƒ³ã‚’æ›´æ–°ã™ã‚‹
 /// </summary>
 void UpdateCurrScene();
 
 /// <summary>
-/// ‚ ‚éƒV[ƒ“‚É•ÏŠ·‚·‚é
+/// ã‚ã‚‹ã‚·ãƒ¼ãƒ³ã«å¤‰æ›ã™ã‚‹
 /// </summary>
-/// <param name="sceneName">ƒV[ƒ“‚Ì–¼‘O</param>
+/// <param name="sceneName">ã‚·ãƒ¼ãƒ³ã®åå‰</param>
 void SwitchSceneToName(const char* sceneName);

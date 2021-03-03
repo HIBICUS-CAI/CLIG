@@ -1,6 +1,6 @@
-//------------------------------------------------------------------------
-// ƒtƒ@ƒCƒ‹–¼: SoundManager.h
-// ‹@”\: ‰¹º‚ÉŠÖ‚µ‚Ä‚Ì‹@”\‚ð’ñ‹Ÿ‚·‚é
+ï»¿//------------------------------------------------------------------------
+// ãƒ•ã‚¡ã‚¤ãƒ«å: SoundManager.h
+// æ©Ÿèƒ½: éŸ³å£°ã«é–¢ã—ã¦ã®æ©Ÿèƒ½ã‚’æä¾›ã™ã‚‹
 //------------------------------------------------------------------------
 
 #pragma once
@@ -10,124 +10,124 @@
 //#define NOTSOUND
 
 /// <summary>
-/// ‰¹ºƒVƒXƒeƒ€‚ð‰Šú‰»‚·‚é
+/// éŸ³å£°ã‚·ã‚¹ãƒ†ãƒ ã‚’åˆæœŸåŒ–ã™ã‚‹
 /// </summary>
 void InitSoundSys();
 
 /// <summary>
-/// ƒtƒ@ƒCƒ‹‚ð‰¹º”z—ñ‚É‘‚«ž‚Þ
+/// ãƒ•ã‚¡ã‚¤ãƒ«ã‚’éŸ³å£°é…åˆ—ã«æ›¸ãè¾¼ã‚€
 /// </summary>
-/// <param name="fileName">ƒtƒ@ƒCƒ‹–¼</param>
-/// <param name="soundName">‰¹º‚É•t‚¯‚½‚¢–¼‘O</param>
-/// <param name="isAlwaysNeed">í‚ÉŽg—p‚³‚ê‚é‚©‚Ç‚¤‚©</param>
+/// <param name="fileName">ãƒ•ã‚¡ã‚¤ãƒ«å</param>
+/// <param name="soundName">éŸ³å£°ã«ä»˜ã‘ãŸã„åå‰</param>
+/// <param name="isAlwaysNeed">å¸¸ã«ä½¿ç”¨ã•ã‚Œã‚‹ã‹ã©ã†ã‹</param>
 void LoadSound(const char* fileName, const char* soundName,
     int isAlwaysNeed = 0);
 
 #ifdef SOUNDBYHAL
 /// <summary>
-/// –¼‘O‚Å‰¹º‚ðŽæ“¾
+/// åå‰ã§éŸ³å£°ã‚’å–å¾—
 /// </summary>
-/// <param name="soundName">‰¹º‚É•t‚¯‚½–¼‘O</param>
-/// <returns>‰¹ºŽwŒü‚Ìƒ|ƒCƒ“ƒ^</returns>
+/// <param name="soundName">éŸ³å£°ã«ä»˜ã‘ãŸåå‰</param>
+/// <returns>éŸ³å£°æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</returns>
 SOUNDFILE_LOADED* GetSoundFile(const char* soundName);
 #else
 /// <summary>
-/// –¼‘O‚Å‰¹º‚ðŽæ“¾
+/// åå‰ã§éŸ³å£°ã‚’å–å¾—
 /// </summary>
-/// <param name="soundName">‰¹º‚É•t‚¯‚½–¼‘O</param>
-/// <returns>‰¹ºŽwŒü‚Ìƒ|ƒCƒ“ƒ^</returns>
+/// <param name="soundName">éŸ³å£°ã«ä»˜ã‘ãŸåå‰</param>
+/// <returns>éŸ³å£°æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</returns>
 SOUNDFILE_IN_MEMBITE* GetSoundFile(const char* soundName);
 #endif // SOUNDBYHAL
 
 #ifdef SOUNDBYHAL
 /// <summary>
-/// ‰¹º‚Ì‰¹—Ê•ÏX
+/// éŸ³å£°ã®éŸ³é‡å¤‰æ›´
 /// </summary>
-/// <param name="soundName">‰¹º‚É•t‚¯‚½–¼‘O</param>
-/// <param name="vol">Ý’u‚³‚¹‚½‚¢‰¹—Ê</param>
+/// <param name="soundName">éŸ³å£°ã«ä»˜ã‘ãŸåå‰</param>
+/// <param name="vol">è¨­ç½®ã•ã›ãŸã„éŸ³é‡</param>
 void ChangeSoundFileVolume(const char* soundName, int vol);
 #else
 /// <summary>
-/// ‰¹º‚Ì‰¹—Ê•ÏX
+/// éŸ³å£°ã®éŸ³é‡å¤‰æ›´
 /// </summary>
-/// <param name="soundName">‰¹º‚É•t‚¯‚½–¼‘O</param>
-/// <param name="vol">Ý’u‚³‚¹‚½‚¢‰¹—Ê</param>
+/// <param name="soundName">éŸ³å£°ã«ä»˜ã‘ãŸåå‰</param>
+/// <param name="vol">è¨­ç½®ã•ã›ãŸã„éŸ³é‡</param>
 void ChangeSoundFileVolume(const char* soundName, float vol);
 #endif // SOUNDBYHAL
 
 #ifdef SOUNDBYHAL
 /// <summary>
-/// ‰¹º‚Ì‰¹—Ê•ÏX
+/// éŸ³å£°ã®éŸ³é‡å¤‰æ›´
 /// </summary>
-/// <param name="sound">‰¹º‚ÉŽwŒü‚Ìƒ|ƒCƒ“ƒ^</param>
-/// <param name="vol">Ý’u‚³‚¹‚½‚¢‰¹—Ê</param>
+/// <param name="sound">éŸ³å£°ã«æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</param>
+/// <param name="vol">è¨­ç½®ã•ã›ãŸã„éŸ³é‡</param>
 void ChangeSoundFileVolume(SOUNDFILE_LOADED* sound, int vol);
 #else
 /// <summary>
-/// ‰¹º‚Ì‰¹—Ê•ÏX
+/// éŸ³å£°ã®éŸ³é‡å¤‰æ›´
 /// </summary>
-/// <param name="sound">‰¹º‚ÉŽwŒü‚Ìƒ|ƒCƒ“ƒ^</param>
-/// <param name="vol">Ý’u‚³‚¹‚½‚¢‰¹—Ê</param>
+/// <param name="sound">éŸ³å£°ã«æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</param>
+/// <param name="vol">è¨­ç½®ã•ã›ãŸã„éŸ³é‡</param>
 void ChangeSoundFileVolume(SOUNDFILE_IN_MEMBITE* sound, float vol);
 #endif // SOUNDBYHAL
 
 #ifdef SOUNDBYHAL
 /// <summary>
-/// ”wŒi‰¹Šy‚ðÄ¶‚·‚é
+/// èƒŒæ™¯éŸ³æ¥½ã‚’å†ç”Ÿã™ã‚‹
 /// </summary>
-/// <param name="sound">‰¹º‚ÉŽwŒü‚Ìƒ|ƒCƒ“ƒ^</param>
+/// <param name="sound">éŸ³å£°ã«æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</param>
 void PlayBackgroundMusic(SOUNDFILE_LOADED* sound);
 #else
 /// <summary>
-/// ”wŒi‰¹Šy‚ðÄ¶‚·‚é
+/// èƒŒæ™¯éŸ³æ¥½ã‚’å†ç”Ÿã™ã‚‹
 /// </summary>
-/// <param name="sound">‰¹º‚ÉŽwŒü‚Ìƒ|ƒCƒ“ƒ^</param>
+/// <param name="sound">éŸ³å£°ã«æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</param>
 void PlayBackgroundMusic(SOUNDFILE_IN_MEMBITE* sound);
 #endif // SOUNDBYHAL
 
 #ifdef SOUNDBYHAL
 /// <summary>
-/// Œø‰Ê‰¹‚ðÄ¶‚·‚é
+/// åŠ¹æžœéŸ³ã‚’å†ç”Ÿã™ã‚‹
 /// </summary>
-/// <param name="sound">‰¹º‚ÉŽwŒü‚Ìƒ|ƒCƒ“ƒ^</param>
+/// <param name="sound">éŸ³å£°ã«æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</param>
 void PlayEffectSound(SOUNDFILE_LOADED* sound);
 #else
 /// <summary>
-/// Œø‰Ê‰¹‚ðÄ¶‚·‚é
+/// åŠ¹æžœéŸ³ã‚’å†ç”Ÿã™ã‚‹
 /// </summary>
-/// <param name="sound">‰¹º‚ÉŽwŒü‚Ìƒ|ƒCƒ“ƒ^</param>
+/// <param name="sound">éŸ³å£°ã«æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</param>
 void PlayEffectSound(SOUNDFILE_IN_MEMBITE* sound);
 #endif // SOUNDBYHAL
 
 
 #ifndef SOUNDBYHAL
 /// <summary>
-/// ‚ ‚é‰¹º‚ðˆê“x‚¾‚¯Ä¶‚·‚é
+/// ã‚ã‚‹éŸ³å£°ã‚’ä¸€åº¦ã ã‘å†ç”Ÿã™ã‚‹
 /// </summary>
-/// <param name="sound">‰¹º‚ÉŽwŒü‚Ìƒ|ƒCƒ“ƒ^</param>
+/// <param name="sound">éŸ³å£°ã«æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</param>
 void PlaySingleSoundOnce(SOUNDFILE_IN_MEMBITE* sound);
 #endif // !SOUNDBYHAL
 
 #ifdef SOUNDBYHAL
 /// <summary>
-/// ‰¹º‚ðƒAƒ“ƒCƒ“ƒXƒg[ƒ‹‚·‚é
+/// éŸ³å£°ã‚’ã‚¢ãƒ³ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹
 /// </summary>
-/// <param name="sound">‰¹º‚ÉŽwŒü‚Ìƒ|ƒCƒ“ƒ^</param>
+/// <param name="sound">éŸ³å£°ã«æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</param>
 void UninstallSound(SOUNDFILE_LOADED* sound);
 #else
 /// <summary>
-/// ‰¹º‚ðƒAƒ“ƒCƒ“ƒXƒg[ƒ‹‚·‚é
+/// éŸ³å£°ã‚’ã‚¢ãƒ³ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹
 /// </summary>
-/// <param name="sound">‰¹º‚ÉŽwŒü‚Ìƒ|ƒCƒ“ƒ^</param>
+/// <param name="sound">éŸ³å£°ã«æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</param>
 void UninstallSound(SOUNDFILE_IN_MEMBITE* sound);
 #endif // SOUNDBYHAL
 
 /// <summary>
-/// ƒ[ƒh‚³‚ê‚½‰¹º‚ÌÄ¶ó‹µŠm’è
+/// ãƒ­ãƒ¼ãƒ‰ã•ã‚ŒãŸéŸ³å£°ã®å†ç”ŸçŠ¶æ³ç¢ºå®š
 /// </summary>
 void CheckAllSoundHasEnded();
 
 /// <summary>
-/// ‰¹ºƒVƒXƒeƒ€‚ð•Â‚¶‚é
+/// éŸ³å£°ã‚·ã‚¹ãƒ†ãƒ ã‚’é–‰ã˜ã‚‹
 /// </summary>
 void TurnOffSoundSys();

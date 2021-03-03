@@ -1,6 +1,6 @@
-//------------------------------------------------------------------------
-// ƒtƒ@ƒCƒ‹–¼: UIObject.h
-// ‹@”\: ‚t‚hƒAƒCƒeƒ€‚ÉŠÖ‚µ‚Ä‚Ìˆ—
+ï»¿//------------------------------------------------------------------------
+// ãƒ•ã‚¡ã‚¤ãƒ«å: UIObject.h
+// æ©Ÿèƒ½: ï¼µï¼©ã‚¢ã‚¤ãƒ†ãƒ ã«é–¢ã—ã¦ã®å‡¦ç†
 //------------------------------------------------------------------------
 
 #pragma once
@@ -10,54 +10,54 @@
 #include "Structs.h"
 
 /// <summary>
-/// ‚t‚hƒAƒCƒeƒ€”z—ñ‚ð‰Šú‰»‚·‚é
+/// ï¼µï¼©ã‚¢ã‚¤ãƒ†ãƒ é…åˆ—ã‚’åˆæœŸåŒ–ã™ã‚‹
 /// </summary>
 void InitUIObj();
 
 /// <summary>
-/// ƒAƒCƒeƒ€‚Ì”Ô†‚Å‚ ‚é‚t‚hƒAƒCƒeƒ€‚ðŽæ‚èo‚·
+/// ã‚¢ã‚¤ãƒ†ãƒ ã®ç•ªå·ã§ã‚ã‚‹ï¼µï¼©ã‚¢ã‚¤ãƒ†ãƒ ã‚’å–ã‚Šå‡ºã™
 /// </summary>
-/// <param name="id">—~‚µ‚¢‚t‚hƒAƒCƒeƒ€‚Ì”Ô†</param>
-/// <returns>”Ô†‚É‰ž‚¶‚Ä‚¢‚é‚t‚hƒAƒCƒeƒ€</returns>
+/// <param name="id">æ¬²ã—ã„ï¼µï¼©ã‚¢ã‚¤ãƒ†ãƒ ã®ç•ªå·</param>
+/// <returns>ç•ªå·ã«å¿œã˜ã¦ã„ã‚‹ï¼µï¼©ã‚¢ã‚¤ãƒ†ãƒ </returns>
 UIOBJECT* GetUIObjByID(int id);
 
 /// <summary>
-/// ƒAƒCƒeƒ€‚Ì–¼‘O‚Å‚ ‚é‚t‚hƒAƒCƒeƒ€‚ðŽæ‚èo‚·
+/// ã‚¢ã‚¤ãƒ†ãƒ ã®åå‰ã§ã‚ã‚‹ï¼µï¼©ã‚¢ã‚¤ãƒ†ãƒ ã‚’å–ã‚Šå‡ºã™
 /// </summary>
-/// <param name="name">—~‚µ‚¢‚t‚hƒAƒCƒeƒ€‚Ì–¼‘O</param>
-/// <returns>–¼‘O‚É‰ž‚¶‚Ä‚¢‚é‚t‚hƒAƒCƒeƒ€</returns>
+/// <param name="name">æ¬²ã—ã„ï¼µï¼©ã‚¢ã‚¤ãƒ†ãƒ ã®åå‰</param>
+/// <returns>åå‰ã«å¿œã˜ã¦ã„ã‚‹ï¼µï¼©ã‚¢ã‚¤ãƒ†ãƒ </returns>
 UIOBJECT* GetUIObjByName(const char* name);
 
 /// <summary>
-/// ‚t‚hƒAƒCƒeƒ€‚ðì‚èo‚·
+/// ï¼µï¼©ã‚¢ã‚¤ãƒ†ãƒ ã‚’ä½œã‚Šå‡ºã™
 /// </summary>
-/// <param name="name">ƒAƒCƒeƒ€‚Ì–¼‘O</param>
-/// <param name="startPoint">ƒAƒCƒeƒ€‚ÌŽn“_À•W</param>
-/// <param name="width">ƒAƒCƒeƒ€‚Ì’·‚³</param>
-/// <param name="height">ƒAƒCƒeƒ€‚Ì‚‚³</param>
-/// <param name="design">ƒAƒCƒeƒ€˜g‚ÌƒfƒUƒCƒ“</param>
-/// <param name="parent">‚±‚ÌƒAƒCƒeƒ€‚ÌeƒAƒCƒeƒ€</param>
-/// <param name="child">‚±‚ÌƒAƒCƒeƒ€‚ÌŽqƒAƒCƒeƒ€</param>
-/// <param name="visiblity">ƒAƒCƒeƒ€‚Ì‰ÂŽ‹«</param>
-/// <returns>ì‚ê‚½ƒAƒCƒeƒ€‚Ìƒ|ƒCƒ“ƒ^</returns>
+/// <param name="name">ã‚¢ã‚¤ãƒ†ãƒ ã®åå‰</param>
+/// <param name="startPoint">ã‚¢ã‚¤ãƒ†ãƒ ã®å§‹ç‚¹åº§æ¨™</param>
+/// <param name="width">ã‚¢ã‚¤ãƒ†ãƒ ã®é•·ã•</param>
+/// <param name="height">ã‚¢ã‚¤ãƒ†ãƒ ã®é«˜ã•</param>
+/// <param name="design">ã‚¢ã‚¤ãƒ†ãƒ æž ã®ãƒ‡ã‚¶ã‚¤ãƒ³</param>
+/// <param name="parent">ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã®è¦ªã‚¢ã‚¤ãƒ†ãƒ </param>
+/// <param name="child">ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã®å­ã‚¢ã‚¤ãƒ†ãƒ </param>
+/// <param name="visiblity">ã‚¢ã‚¤ãƒ†ãƒ ã®å¯è¦–æ€§</param>
+/// <returns>ä½œã‚ŒãŸã‚¢ã‚¤ãƒ†ãƒ ã®ãƒã‚¤ãƒ³ã‚¿</returns>
 UIOBJECT* CreateUIO(const char* name, POSITION_2D startPoint, int width, int height,
     UIO_DESIGN design, UIOBJECT* parent = NULL, UIOBJECT* child = NULL,
     int visiblity = 0);
 
 /// <summary>
-/// ‚t‚hƒAƒCƒeƒ€‚ðXV—pƒoƒbƒtƒ@‚É‘‚«ž‚Þ
+/// ï¼µï¼©ã‚¢ã‚¤ãƒ†ãƒ ã‚’æ›´æ–°ç”¨ãƒãƒƒãƒ•ã‚¡ã«æ›¸ãè¾¼ã‚€
 /// </summary>
-/// <param name="uiObject">‘‚«ž‚Ý‚½‚¢ƒAƒCƒeƒ€‚ÉŽwŒü‚Ìƒ|ƒCƒ“ƒ^</param>
+/// <param name="uiObject">æ›¸ãè¾¼ã¿ãŸã„ã‚¢ã‚¤ãƒ†ãƒ ã«æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</param>
 void DrawUIO(UIOBJECT* uiObject);
 
 /// <summary>
-/// ƒAƒCƒeƒ€’†‚Ì•¶Žš“à—e‚ðXV—pƒoƒbƒtƒ@‚É‘‚«ž‚Þ
+/// ã‚¢ã‚¤ãƒ†ãƒ ä¸­ã®æ–‡å­—å†…å®¹ã‚’æ›´æ–°ç”¨ãƒãƒƒãƒ•ã‚¡ã«æ›¸ãè¾¼ã‚€
 /// </summary>
-/// <param name="uiObject">‘‚«ž‚Ý‚½‚¢ƒAƒCƒeƒ€‚ÉŽwŒü‚Ìƒ|ƒCƒ“ƒ^</param>
+/// <param name="uiObject">æ›¸ãè¾¼ã¿ãŸã„ã‚¢ã‚¤ãƒ†ãƒ ã«æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</param>
 void DrawTextInUIO(UIOBJECT* uiObject);
 
 /// <summary>
-/// ƒAƒCƒeƒ€’†‚Ìƒ{ƒ^ƒ““à—e‚ðXV—pƒoƒbƒtƒ@‚É‘‚«ž‚Þ
+/// ã‚¢ã‚¤ãƒ†ãƒ ä¸­ã®ãƒœã‚¿ãƒ³å†…å®¹ã‚’æ›´æ–°ç”¨ãƒãƒƒãƒ•ã‚¡ã«æ›¸ãè¾¼ã‚€
 /// </summary>
-/// <param name="uiObject">‘‚«ž‚Ý‚½‚¢ƒAƒCƒeƒ€‚ÉŽwŒü‚Ìƒ|ƒCƒ“ƒ^</param>
+/// <param name="uiObject">æ›¸ãè¾¼ã¿ãŸã„ã‚¢ã‚¤ãƒ†ãƒ ã«æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</param>
 void DrawBtnInUIO(UIOBJECT* uiObject);

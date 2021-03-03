@@ -1,6 +1,6 @@
-//------------------------------------------------------------------------
-// ƒtƒ@ƒCƒ‹–¼: CustomizedApp.h
-// ‹@”\: ƒQ[ƒ€‚ÌŠg’£—v‘f‚ÉŠÖ‚µ‚Ä‚Ì•âŠ®
+ï»¿//------------------------------------------------------------------------
+// ãƒ•ã‚¡ã‚¤ãƒ«å: CustomizedApp.h
+// æ©Ÿèƒ½: ã‚²ãƒ¼ãƒ ã®æ‹¡å¼µè¦ç´ ã«é–¢ã—ã¦ã®è£œå®Œ
 //------------------------------------------------------------------------
 
 #pragma once
@@ -8,33 +8,33 @@
 #include "Structs.h"
 
 /// <summary>
-/// Šg’£—v‘f‚ð‰Šú‰»‚·‚é
+/// æ‹¡å¼µè¦ç´ ã‚’åˆæœŸåŒ–ã™ã‚‹
 /// </summary>
 void AppInit();
 
 /// <summary>
-/// Šg’£—v‘f‚ðXV‚·‚é
+/// æ‹¡å¼µè¦ç´ ã‚’æ›´æ–°ã™ã‚‹
 /// </summary>
 void AppUpdate();
 
 /// <summary>
-/// Šg’£—v‘f‚ð•Â‚¶‚é
+/// æ‹¡å¼µè¦ç´ ã‚’é–‰ã˜ã‚‹
 /// </summary>
 void AppTurnOff();
 
 /// <summary>
-/// Šg’£—v‘f‚ÌƒL[ƒ{[ƒhƒCƒxƒ“ƒg‚ðs‚¤
+/// æ‹¡å¼µè¦ç´ ã®ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ã‚¤ãƒ™ãƒ³ãƒˆã‚’è¡Œã†
 /// </summary>
-/// <param name="keyCode">ƒL[”Ô†</param>
+/// <param name="keyCode">ã‚­ãƒ¼ç•ªå·</param>
 void AppKeyboardEvent(int keyCode);
 
 /// <summary>
-/// Šg’£—v‘f‚Ìƒ{ƒ^ƒ“ƒCƒxƒ“ƒg‚ðs‚¤
+/// æ‹¡å¼µè¦ç´ ã®ãƒœã‚¿ãƒ³ã‚¤ãƒ™ãƒ³ãƒˆã‚’è¡Œã†
 /// </summary>
-/// <param name="value">ƒ{ƒ^ƒ“”Ô†</param>
+/// <param name="value">ãƒœã‚¿ãƒ³ç•ªå·</param>
 void AppButtonEvent(int value);
 
 /// <summary>
-/// Šg’£—v‘f‚ð‘¼‚ÌƒGƒtƒFƒNƒg‚Åo—Í‚·‚é
+/// æ‹¡å¼µè¦ç´ ã‚’ä»–ã®ã‚¨ãƒ•ã‚§ã‚¯ãƒˆã§å‡ºåŠ›ã™ã‚‹
 /// </summary>
 void AppPostPrint();

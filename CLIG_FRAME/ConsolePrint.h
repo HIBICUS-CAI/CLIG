@@ -1,6 +1,6 @@
-//------------------------------------------------------------------------
-// ƒtƒ@ƒCƒ‹–¼: ConsolePrint.h
-// ‹@”\: o—Í—pƒoƒbƒtƒ@‚Ì“à—e‚ðƒRƒ“ƒ\[ƒ‹‚Éo—Í‚·‚é
+ï»¿//------------------------------------------------------------------------
+// ãƒ•ã‚¡ã‚¤ãƒ«å: ConsolePrint.h
+// æ©Ÿèƒ½: å‡ºåŠ›ç”¨ãƒãƒƒãƒ•ã‚¡ã®å†…å®¹ã‚’ã‚³ãƒ³ã‚½ãƒ¼ãƒ«ã«å‡ºåŠ›ã™ã‚‹
 //------------------------------------------------------------------------
 
 #pragma once
@@ -10,55 +10,55 @@
 #include "Structs.h"
 
 /// <summary>
-/// ƒRƒ“ƒ\[ƒ‹‚Ì‘å‚«‚³‚Æƒoƒbƒtƒ@‚ð‰Šú‰»‚·‚é
+/// ã‚³ãƒ³ã‚½ãƒ¼ãƒ«ã®å¤§ãã•ã¨ãƒãƒƒãƒ•ã‚¡ã‚’åˆæœŸåŒ–ã™ã‚‹
 /// </summary>
 void InitOutputBuffer();
 
 /// <summary>
-/// ‘O‰ño—Í—pƒoƒbƒtƒ@‚É‘‚«ž‚ñ‚¾“à—e‚ð”pŠü
+/// å‰å›žå‡ºåŠ›ç”¨ãƒãƒƒãƒ•ã‚¡ã«æ›¸ãè¾¼ã‚“ã å†…å®¹ã‚’å»ƒæ£„
 /// </summary>
 void ClearOutputBuffer();
 
 /// <summary>
-/// o—Í—pƒoƒbƒtƒ@‚Ì“à—e‚ð•¶Žš”z—ñ‚ÌŒ`‚Åo—Í‚·‚é
+/// å‡ºåŠ›ç”¨ãƒãƒƒãƒ•ã‚¡ã®å†…å®¹ã‚’æ–‡å­—é…åˆ—ã®å½¢ã§å‡ºåŠ›ã™ã‚‹
 /// </summary>
 void PrintOutputBuffer();
 
 /// <summary>
-/// o—Í—pƒoƒbƒtƒ@‚É•K—v‚ÈXVŽ–€‚ðs‚¤
+/// å‡ºåŠ›ç”¨ãƒãƒƒãƒ•ã‚¡ã«å¿…è¦ãªæ›´æ–°äº‹é …ã‚’è¡Œã†
 /// </summary>
 void UpdateOutputBuffer();
 
 #ifdef MY_DEBUG_INFO
 /// <summary>
-/// ƒtƒŒ[ƒ€ƒŒ[ƒg‚ð•\Ž¦‚³‚¹‚é
+/// ãƒ•ãƒ¬ãƒ¼ãƒ ãƒ¬ãƒ¼ãƒˆã‚’è¡¨ç¤ºã•ã›ã‚‹
 /// </summary>
 void ShowFPSAtScreen();
 #endif // SHOWFPS
 
 /// <summary>
-/// ‚ ‚éˆÊ’u‚É“à—e‚ð’¼Ú‚É‘‚«ž‚Þ
+/// ã‚ã‚‹ä½ç½®ã«å†…å®¹ã‚’ç›´æŽ¥ã«æ›¸ãè¾¼ã‚€
 /// </summary>
-/// <param name="position">‘‚«ž‚ÞÀ•W</param>
-/// <param name="text">‘‚«ž‚Ý‚½‚¢“à—e</param>
+/// <param name="position">æ›¸ãè¾¼ã‚€åº§æ¨™</param>
+/// <param name="text">æ›¸ãè¾¼ã¿ãŸã„å†…å®¹</param>
 void WriteCharIntoOutputBuffer(POSITION_2D position, const char text);
 
 /// <summary>
-/// ‚ ‚éˆÊ’u‚É•¶Žš”z—ñ“à—e‚ð‘‚«ž‚Þ
+/// ã‚ã‚‹ä½ç½®ã«æ–‡å­—é…åˆ—å†…å®¹ã‚’æ›¸ãè¾¼ã‚€
 /// </summary>
-/// <param name="startPos">‘‚«ž‚ÞÀ•W</param>
-/// <param name="text">‘‚«ž‚Ý‚½‚¢•¶Žš”z—ñ</param>
+/// <param name="startPos">æ›¸ãè¾¼ã‚€åº§æ¨™</param>
+/// <param name="text">æ›¸ãè¾¼ã¿ãŸã„æ–‡å­—é…åˆ—</param>
 void WriteStrIntoOutputBufferByPos(POSITION_2D startPos, const char* text);
 
 /// <summary>
-/// ‚ ‚éˆÊ’u‚É•¶Žš”z—ñ‚Æ”’l‚ð‘‚«ž‚Þ
+/// ã‚ã‚‹ä½ç½®ã«æ–‡å­—é…åˆ—ã¨æ•°å€¤ã‚’æ›¸ãè¾¼ã‚€
 /// </summary>
-/// <param name="startPos">‘‚«ž‚ÞÀ•W</param>
-/// <param name="text">‘‚«ž‚Ý‚½‚¢•¶Žš”z—ñ</param>
-/// <param name="value">‘‚«ž‚Ý‚½‚¢’l</param>
+/// <param name="startPos">æ›¸ãè¾¼ã‚€åº§æ¨™</param>
+/// <param name="text">æ›¸ãè¾¼ã¿ãŸã„æ–‡å­—é…åˆ—</param>
+/// <param name="value">æ›¸ãè¾¼ã¿ãŸã„å€¤</param>
 void WriteStrInt1IntoOutputBufferByPos(POSITION_2D startPos, const char* text, int value);
 
 /// <summary>
-/// o—Í§Œäƒnƒ“ƒhƒ‹‚ð•Â‚¶‚é
+/// å‡ºåŠ›åˆ¶å¾¡ãƒãƒ³ãƒ‰ãƒ«ã‚’é–‰ã˜ã‚‹
 /// </summary>
 void CloseMTPrint();

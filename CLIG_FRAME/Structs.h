@@ -1,6 +1,6 @@
-//------------------------------------------------------------------------
-// ƒtƒ@ƒCƒ‹–¼: Structs.h
-// ‹@”\: Šî–{‚È\‘¢‘Ì‚ðº–¾‚·‚é
+ï»¿//------------------------------------------------------------------------
+// ãƒ•ã‚¡ã‚¤ãƒ«å: Structs.h
+// æ©Ÿèƒ½: åŸºæœ¬ãªæ§‹é€ ä½“ã‚’å£°æ˜Žã™ã‚‹
 //------------------------------------------------------------------------
 
 #pragma once
@@ -11,7 +11,7 @@
 #include "LogsOutput.h"
 
 /// <summary>
-/// À•W‚Ì\‘¢‘Ì
+/// åº§æ¨™ã®æ§‹é€ ä½“
 /// </summary>
 struct POSITION_2D
 {
@@ -74,7 +74,7 @@ struct POSITION_2D
 };
 
 /// <summary>
-/// ƒŠƒXƒg—v‘f‚Ì\‘¢‘Ì
+/// ãƒªã‚¹ãƒˆè¦ç´ ã®æ§‹é€ ä½“
 /// </summary>
 struct QSINGLENODE
 {
@@ -83,7 +83,7 @@ struct QSINGLENODE
 };
 
 /// <summary>
-/// ‚h‚m‚sŒ^ƒŠƒXƒg‚Ì\‘¢‘Ì
+/// ï¼©ï¼®ï¼´åž‹ãƒªã‚¹ãƒˆã®æ§‹é€ ä½“
 /// </summary>
 struct QUEUE_INT
 {
@@ -92,7 +92,7 @@ struct QUEUE_INT
 };
 
 /// <summary>
-/// ‚t‚hƒAƒCƒeƒ€’†‚Ì•¶Žš•”•ª
+/// ï¼µï¼©ã‚¢ã‚¤ãƒ†ãƒ ä¸­ã®æ–‡å­—éƒ¨åˆ†
 /// </summary>
 struct UI_TEXT
 {
@@ -137,7 +137,7 @@ enum class BTN_DESIGN
 };
 
 /// <summary>
-/// ‚t‚hƒAƒCƒeƒ€’†‚Ìƒ{ƒ^ƒ“•”•ª
+/// ï¼µï¼©ã‚¢ã‚¤ãƒ†ãƒ ä¸­ã®ãƒœã‚¿ãƒ³éƒ¨åˆ†
 /// </summary>
 struct UI_BUTTON
 {
@@ -178,7 +178,7 @@ enum class UIO_DESIGN
 };
 
 /// <summary>
-/// ‚t‚hƒAƒCƒeƒ€‚Ì\‘¢‘Ì
+/// ï¼µï¼©ã‚¢ã‚¤ãƒ†ãƒ ã®æ§‹é€ ä½“
 /// </summary>
 struct UIOBJECT
 {
@@ -239,9 +239,9 @@ struct UIOBJECT
     }
 
     /// <summary>
-    /// ‚±‚ÌƒAƒCƒeƒ€‚É•¶Žš“à—e‚ð“Y•t‚·‚é
+    /// ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã«æ–‡å­—å†…å®¹ã‚’æ·»ä»˜ã™ã‚‹
     /// </summary>
-    /// <param name="text">•¶Žš“à—e</param>
+    /// <param name="text">æ–‡å­—å†…å®¹</param>
     void AddText(UI_TEXT text)
     {
         int index = 0;
@@ -274,9 +274,9 @@ struct UIOBJECT
     }
 
     /// <summary>
-    /// ‚±‚ÌƒAƒCƒeƒ€‚Éƒ{ƒ^ƒ““à—e‚ð“Y•t‚·‚é
+    /// ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã«ãƒœã‚¿ãƒ³å†…å®¹ã‚’æ·»ä»˜ã™ã‚‹
     /// </summary>
-    /// <param name="btn">ƒ{ƒ^ƒ““à—e</param>
+    /// <param name="btn">ãƒœã‚¿ãƒ³å†…å®¹</param>
     void AddBtn(UI_BUTTON btn)
     {
         int index = 0;
@@ -316,13 +316,13 @@ struct UIOBJECT
                 break;
             }
 
-            // ƒ{ƒ^ƒ“‚ÌŠÔ‚ÅˆÊ’uŠÖŒW‚ðŽ©“®“I‚ÉŠm’è‚·‚é
+            // ãƒœã‚¿ãƒ³ã®é–“ã§ä½ç½®é–¢ä¿‚ã‚’è‡ªå‹•çš„ã«ç¢ºå®šã™ã‚‹
             int deltaX = (btn.Position.posX - Buttons[index].Position.posX) / 2;
             int deltaY = btn.Position.posY - Buttons[index].Position.posY;
             int deltaXY = deltaX * deltaX - deltaY * deltaY;
             if (deltaXY >= 0)
             {
-                // ¶‰E
+                // å·¦å³
                 if (deltaX >= 0 && deltaX <= leastXPlus)
                 {
                     btn.LeftBtn = &Buttons[index];
@@ -336,7 +336,7 @@ struct UIOBJECT
             }
             else
             {
-                // ã‰º
+                // ä¸Šä¸‹
                 if (deltaY >= 0 && deltaY <= leastYPlus)
                 {
                     btn.UpBtn = &Buttons[index];
@@ -383,7 +383,7 @@ struct UIOBJECT
 };
 
 /// <summary>
-/// ˆÊ’u‚ðŽ¦‚·\‘¢‘Ì
+/// ä½ç½®ã‚’ç¤ºã™æ§‹é€ ä½“
 /// </summary>
 struct Object
 {
@@ -398,7 +398,7 @@ struct Object
 #define SPRITE_MAX_WIDTH 80
 #define SPRITE_MAX_HEIGHT 40
 /// <summary>
-/// ƒXƒvƒ‰ƒCƒg\‘¢‘Ì
+/// ã‚¹ãƒ—ãƒ©ã‚¤ãƒˆæ§‹é€ ä½“
 /// </summary>
 struct SPRITE
 {

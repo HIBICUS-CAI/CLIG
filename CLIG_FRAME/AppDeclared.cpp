@@ -1,4 +1,4 @@
-#include "AppDeclared.h"
+﻿#include "AppDeclared.h"
 #include "SpriteAnimator.h"
 
 SCENENODE g_SceneNodes[SCENENODESIZE];

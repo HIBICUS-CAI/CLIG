@@ -1,4 +1,4 @@
-#include "GameApp.h"
+Ôªø#include "GameApp.h"
 #include "ConsolePrint.h"
 #include "LogsOutput.h"
 #include "DefinedValues.h"
@@ -29,13 +29,13 @@ int Init()
         CreateUIO("child", POSITION_2D(3, 3), 60, 15, UIO_DESIGN::STRAIGHT, 0));
     GetUIObjByID(10001)->AddParent(GetUIObjByID(10001));
     GetUIObjByID(10001)->AddText(UI_TEXT(POSITION_2D(1, 1),
-        (char*)"ÉAÉzÉAÉzÉ}Éì"));
+        (char*)"„Ç¢„Éõ„Ç¢„Éõ„Éû„É≥"));
     GetUIObjByName("child")->AddBtn(UI_BUTTON(0, POSITION_2D(3, 3),
-        (char*)"É{É^Éì1", BTN_DESIGN::LINE));
+        (char*)"„Éú„Çø„É≥1", BTN_DESIGN::LINE));
     GetUIObjByName("child")->AddBtn(UI_BUTTON(0, POSITION_2D(9, 4),
-        (char*)"É{É^Éì2", BTN_DESIGN::LINE));
+        (char*)"„Éú„Çø„É≥2", BTN_DESIGN::LINE));
     GetUIObjByName("child")->AddBtn(UI_BUTTON(TEST_CLOSETHIS, POSITION_2D(10, 7),
-        (char*)"ï¬Ç∂ÇÈ", BTN_DESIGN::STRAIGHT));*/
+        (char*)"Èñâ„Åò„Çã", BTN_DESIGN::STRAIGHT));*/
 
     return 1;
 }

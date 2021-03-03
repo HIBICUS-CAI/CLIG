@@ -1,6 +1,6 @@
-//------------------------------------------------------------------------
-// ƒtƒ@ƒCƒ‹–¼: GameAppStructs.h
-// ‹@”\: ƒ~ƒhƒ‹ƒEƒFƒA‚Ý‚½‚¢‚È\‘¢‘Ì
+ï»¿//------------------------------------------------------------------------
+// ãƒ•ã‚¡ã‚¤ãƒ«å: GameAppStructs.h
+// æ©Ÿèƒ½: ãƒŸãƒ‰ãƒ«ã‚¦ã‚§ã‚¢ã¿ãŸã„ãªæ§‹é€ ä½“
 //------------------------------------------------------------------------
 
 #pragma once
@@ -8,7 +8,7 @@
 #include "Structs.h"
 
 /// <summary>
-/// ƒV[ƒ“‚ÌƒJƒƒ‰\‘¢‘Ì
+/// ã‚·ãƒ¼ãƒ³ã®ã‚«ãƒ¡ãƒ©æ§‹é€ ä½“
 /// </summary>
 struct SCENECAMERA
 {
@@ -34,7 +34,7 @@ struct SCENECAMERA
 };
 
 /// <summary>
-/// ƒV[ƒ“\‘¢‘Ì
+/// ã‚·ãƒ¼ãƒ³æ§‹é€ ä½“
 /// </summary>
 struct SCENENODE
 {
@@ -96,7 +96,7 @@ struct SCENENODE
 };
 
 /// <summary>
-/// Šî–{‚È‘ÎÛŽÒ\‘¢‘Ì
+/// åŸºæœ¬ãªå¯¾è±¡è€…æ§‹é€ ä½“
 /// </summary>
 struct OBJECT
 {
@@ -134,7 +134,7 @@ struct OBJECT
 
 #define MAXSIZE_PER_SPRITE_FRAME 60
 /// <summary>
-/// •¡”‚ ‚èƒXƒvƒ‰ƒCƒg‚ÌW‡‘Ì
+/// è¤‡æ•°ã‚ã‚Šã‚¹ãƒ—ãƒ©ã‚¤ãƒˆã®é›†åˆä½“
 /// </summary>
 struct SPRITE_ANIME
 {

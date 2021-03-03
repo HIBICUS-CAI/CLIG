@@ -1,6 +1,6 @@
-//------------------------------------------------------------------------
-// ƒtƒ@ƒCƒ‹–¼: DatabaseManager.h
-// ‹@”\: ƒf[ƒ^ƒx[ƒX‚Æ‚Ì‘€ì‚ğˆêŠ‡‚ÅŠÇ—‚·‚é
+ï»¿//------------------------------------------------------------------------
+// ãƒ•ã‚¡ã‚¤ãƒ«å: DatabaseManager.h
+// æ©Ÿèƒ½: ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ã¨ã®æ“ä½œã‚’ä¸€æ‹¬ã§ç®¡ç†ã™ã‚‹
 //------------------------------------------------------------------------
 
 #pragma once
@@ -8,50 +8,50 @@
 #include "Assets/Libs/MariaDB Connector C/include/mysql.h"
 
 /// <summary>
-/// •K—v‚Èƒf[ƒ^ƒx[ƒXƒnƒ“ƒhƒ‹‚ğ‰Šú‰»‚·‚é
+/// å¿…è¦ãªãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã‚’åˆæœŸåŒ–ã™ã‚‹
 /// </summary>
-/// <param name="dbHandle">ƒf[ƒ^ƒx[ƒXƒnƒ“ƒhƒ‹</param>
+/// <param name="dbHandle">ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«</param>
 void InitDatabaseHandle(MYSQL* dbHandle);
 
 /// <summary>
-/// ƒf[ƒ^ƒx[ƒX‚ÉÚ‘±‚·‚é
+/// ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ã«æ¥ç¶šã™ã‚‹
 /// </summary>
-/// <param name="dbHandle">ƒf[ƒ^ƒx[ƒXƒnƒ“ƒhƒ‹</param>
-/// <param name="host">ƒf[ƒ^ƒx[ƒXIP</param>
-/// <param name="user">ƒ†[ƒU[–¼</param>
-/// <param name="passwd">ˆÃØ”Ô†</param>
-/// <param name="database">ƒf[ƒ^ƒx[ƒX–¼</param>
-/// <returns>Ú‘±ƒnƒ“ƒhƒ‹</returns>
+/// <param name="dbHandle">ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«</param>
+/// <param name="host">ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹IP</param>
+/// <param name="user">ãƒ¦ãƒ¼ã‚¶ãƒ¼å</param>
+/// <param name="passwd">æš—è¨¼ç•ªå·</param>
+/// <param name="database">ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹å</param>
+/// <returns>æ¥ç¶šãƒãƒ³ãƒ‰ãƒ«</returns>
 MYSQL* ConnectToDatabase(MYSQL* dbHandle,
     const char* host, const char* user,
     const char* passwd, const char* database);
 
 /// <summary>
-/// ƒf[ƒ^ƒx[ƒX‚Ö‚ÌÚ‘±‚ğ•Â‚¶‚é
+/// ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ã¸ã®æ¥ç¶šã‚’é–‰ã˜ã‚‹
 /// </summary>
-/// <param name="cnctHandle">Ú‘±ƒnƒ“ƒhƒ‹</param>
+/// <param name="cnctHandle">æ¥ç¶šãƒãƒ³ãƒ‰ãƒ«</param>
 void CloseConnectHandle(MYSQL* cnctHandle);
 
 /// <summary>
-/// ˆê‚Â‚ÌSQL•¶‚ğÀs‚·‚é
+/// ä¸€ã¤ã®SQLæ–‡ã‚’å®Ÿè¡Œã™ã‚‹
 /// </summary>
-/// <param name="dbHandle">ƒf[ƒ^ƒx[ƒXƒnƒ“ƒhƒ‹</param>
-/// <param name="requestStr">SQL•¶</param>
-/// <returns>Às¬Œ÷‚©”Û‚©</returns>
+/// <param name="dbHandle">ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«</param>
+/// <param name="requestStr">SQLæ–‡</param>
+/// <returns>å®Ÿè¡ŒæˆåŠŸã‹å¦ã‹</returns>
 int RunQueryRequest(MYSQL* dbHandle, const char* requestStr);
 
 /// <summary>
-/// ÀsŒ‹‰Ê‚ğæ‚èÁ‚·
+/// å®Ÿè¡Œçµæœã‚’å–ã‚Šæ¶ˆã™
 /// </summary>
-/// <param name="result">ÀsŒ‹‰Êƒ|ƒCƒ“ƒ^</param>
+/// <param name="result">å®Ÿè¡Œçµæœãƒã‚¤ãƒ³ã‚¿</param>
 void FreeResultPointer(MYSQL_RES* result);
 
 /// <summary>
-/// SQL•¶‚ğÀsŒã‚»‚ÌŒ‹‰Ê‚ğæ“¾
+/// SQLæ–‡ã‚’å®Ÿè¡Œå¾Œãã®çµæœã‚’å–å¾—
 /// </summary>
-/// <param name="dbHandle">ƒf[ƒ^ƒx[ƒXƒnƒ“ƒhƒ‹</param>
-/// <param name="requestStr">SQL•¶</param>
-/// <returns>ÀsŒ‹‰Êƒ|ƒCƒ“ƒ^</returns>
+/// <param name="dbHandle">ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«</param>
+/// <param name="requestStr">SQLæ–‡</param>
+/// <returns>å®Ÿè¡Œçµæœãƒã‚¤ãƒ³ã‚¿</returns>
 MYSQL_RES* RunQueryAndGetResult(MYSQL* dbHandle,
     const char* requestStr);
 

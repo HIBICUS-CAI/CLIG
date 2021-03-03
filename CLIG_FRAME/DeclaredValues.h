@@ -1,6 +1,6 @@
-//------------------------------------------------------------------------
-// �t�@�C����: DeclaredValues.h
-// �@�\: ����ȃO���[�o���ϐ��𐺖�����
+﻿//------------------------------------------------------------------------
+// ファイル名: DeclaredValues.h
+// 機能: 特殊なグローバル変数を声明する
 //------------------------------------------------------------------------
 
 #pragma once
@@ -9,156 +9,156 @@
 #include "Structs.h"
 
 /// <summary>
-/// �Q�[���������邩�ǂ�����ݒ�
+/// ゲームが続けるかどうかを設定
 /// </summary>
-/// <param name="value">�O�Ȃ�Q�[���������Ȃ�</param>
+/// <param name="value">０ならゲームが続けない</param>
 void SetGameRunFlag(int value);
 
 /// <summary>
-/// �Q�[���������邩�ǂ������擾
+/// ゲームが続けるかどうかを取得
 /// </summary>
-/// <returns>������̂��邵</returns>
+/// <returns>続けるのしるし</returns>
 int GetGameRunFlag();
 
 #define DELTATIME 16
 
 /// <summary>
-/// �ݒ肳�ꂽ�t���[�����Ԃ��擾
+/// 設定されたフレーム時間を取得
 /// </summary>
-/// <returns>�ݒ肳�ꂽ�t���[������</returns>
+/// <returns>設定されたフレーム時間</returns>
 int GetDeclaredDeltaTime();
 
 /// <summary>
-/// �t���[�����Ԃ�ݒ肷��
+/// フレーム時間を設定する
 /// </summary>
-/// <param name="value">�t���[������</param>
+/// <param name="value">フレーム時間</param>
 void SetDeclaredDeltaTime(int value);
 
 /// <summary>
-/// �o�̓n���h�����擾
+/// 出力ハンドルを取得
 /// </summary>
-/// <returns>�o�͐���n���h��</returns>
+/// <returns>出力制御ハンドル</returns>
 HANDLE GetPrintHandle();
 
 /// <summary>
-/// �o�̓n���h����ݒ�
+/// 出力ハンドルを設定
 /// </summary>
-/// <param name="handle">�o�͐���n���h��</param>
+/// <param name="handle">出力制御ハンドル</param>
 void SetPrintHandle(HANDLE handle);
 
 /// <summary>
-/// �X�V�p�o�b�t�@�Əo�͗p�o�b�t�@������
+/// 更新用バッファと出力用バッファを交換
 /// </summary>
 void SwapPrintChain();
 
 /// <summary>
-/// �X�V�p�o�b�t�@���擾
+/// 更新用バッファを取得
 /// </summary>
-/// <returns>�X�V�p�o�b�t�@�Ɏw���̃|�C���^</returns>
+/// <returns>更新用バッファに指向のポインタ</returns>
 char* GetOutputBufferToUpdate();
 
 /// <summary>
-/// �o�͗p�o�b�t�@���擾
+/// 出力用バッファを取得
 /// </summary>
-/// <returns>�o�͗p�o�b�t�@�Ɏw���̃|�C���^</returns>
+/// <returns>出力用バッファに指向のポインタ</returns>
 char* GetOutputBufferToPrint();
 
 #define UIOBJSIZE 32
 
 /// <summary>
-/// �t�h�A�C�e���z����擾
+/// ＵＩアイテム配列を取得
 /// </summary>
-/// <returns>�t�h�A�C�e���z��̃w�b�h�|�C���^</returns>
+/// <returns>ＵＩアイテム配列のヘッドポインタ</returns>
 UIOBJECT* GetUIObj();
 
 /// <summary>
-/// �t�h�A�C�e���z��̌��ݔԍ�
+/// ＵＩアイテム配列の現在番号
 /// </summary>
-/// <returns>���݂̔ԍ�</returns>
+/// <returns>現在の番号</returns>
 int* GetUIOIndex();
 
 /// <summary>
-/// �t�h�A�C�e���z��̌��ݔԍ���ݒ�
+/// ＵＩアイテム配列の現在番号を設定
 /// </summary>
-/// <param name="value">�ԍ��̒l</param>
+/// <param name="value">番号の値</param>
 void SetUIOIndex(int value);
 
 /// <summary>
-/// �t�h�A�C�e���z��̌��ݔԍ����P�𑫂�
+/// ＵＩアイテム配列の現在番号を１を足す
 /// </summary>
 void AddUIOIndex();
 
 /// <summary>
-/// ���ݍł���K�Ȃt�h�A�C�e�����擾
+/// 現在最も上階なＵＩアイテムを取得
 /// </summary>
-/// <returns>�ŏ�K�̂t�h�A�C�e���Ɏw���̃|�C���^</returns>
+/// <returns>最上階のＵＩアイテムに指向のポインタ</returns>
 UIOBJECT* GetTopUIO();
 
 /// <summary>
-/// �ŏ�K�̂t�h�A�C�e����ݒ�
+/// 最上階のＵＩアイテムを設定
 /// </summary>
-/// <param name="uiObj">�t�h�A�C�e���w���̃|�C���^</param>
+/// <param name="uiObj">ＵＩアイテム指向のポインタ</param>
 void SetTopUIO(UIOBJECT* uiObj);
 
 /// <summary>
-/// �o�b�t�@�����p���䐺�����擾
+/// バッファ交換用制御声明を取得
 /// </summary>
-/// <returns>����p�A�C�e��</returns>
+/// <returns>制御用アイテム</returns>
 CRITICAL_SECTION* GetSwapChainCS();
 
 /// <summary>
-/// ���I�����ꂽ�{�^�����擾
+/// 今選択されたボタンを取得
 /// </summary>
-/// <returns>�I�����ꂽ�{�^���Ɏw���̃|�C���^</returns>
+/// <returns>選択されたボタンに指向のポインタ</returns>
 UI_BUTTON* GetSelectedBtn();
 
 /// <summary>
-/// �I�������{�^����ݒ�
+/// 選択されるボタンを設定
 /// </summary>
-/// <param name="btn">�{�^���Ɏw���̃|�C���^</param>
+/// <param name="btn">ボタンに指向のポインタ</param>
 void SetSelectedBtn(UI_BUTTON* btn);
 
 /// <summary>
-/// �����I�Ƀ{�^����ݒ肷��L�����擾
+/// 自動的にボタンを設定する記号を取得
 /// </summary>
-/// <returns>�L���Ɏw���̃|�C���^</returns>
+/// <returns>記号に指向のポインタ</returns>
 int* GetAutoSelectBtnFlag();
 
 /// <summary>
-/// �����I�{�^����ݒ肷��̋L����ݒ�
+/// 自動的ボタンを設定するの記号を設定
 /// </summary>
-/// <param name="value">�L���̒l</param>
+/// <param name="value">記号の値</param>
 void SetAutoSelectBtnFlag(int value);
 
 #define SOUNDFILE_SIZE 64
 
 #ifdef SOUNDBYHAL
 /// <summary>
-/// �i�[���ꂽ�̉����t�@�C���z����擾
+/// 格納されたの音声ファイル配列を取得
 /// </summary>
-/// <returns>�i�[���ꂽ�̉����t�@�C���z��w���̃|�C���^</returns>
+/// <returns>格納されたの音声ファイル配列指向のポインタ</returns>
 SOUNDFILE_LOADED* GetSoundFilesInMemBitesArray();
 #else
 /// <summary>
-/// �i�[���ꂽ�̉����t�@�C���z����擾
+/// 格納されたの音声ファイル配列を取得
 /// </summary>
-/// <returns>�i�[���ꂽ�̉����t�@�C���z��w���̃|�C���^</returns>
+/// <returns>格納されたの音声ファイル配列指向のポインタ</returns>
 SOUNDFILE_IN_MEMBITE* GetSoundFilesInMemBitesArray();
 #endif // SOUNDBYHAL
 
 #ifdef SOUNDBYHAL
 /// <summary>
-/// ���O�ɂ���Ċi�[���ꂽ�̉����t�@�C�����擾
+/// 名前によって格納されたの音声ファイルを取得
 /// </summary>
-/// <param name="fileName">�i�[���ꂽ�����t�@�C���̖��O</param>
-/// <returns>�i�[���ꂽ�����t�@�C���w���̃|�C���^</returns>
+/// <param name="fileName">格納された音声ファイルの名前</param>
+/// <returns>格納された音声ファイル指向のポインタ</returns>
 SOUNDFILE_LOADED* GetSoundFilesInMemBites(const char* soundName);
 #else
 /// <summary>
-/// ���O�ɂ���Ċi�[���ꂽ�̉����t�@�C�����擾
+/// 名前によって格納されたの音声ファイルを取得
 /// </summary>
-/// <param name="fileName">�i�[���ꂽ�����t�@�C���̖��O</param>
-/// <returns>�i�[���ꂽ�����t�@�C���w���̃|�C���^</returns>
+/// <param name="fileName">格納された音声ファイルの名前</param>
+/// <returns>格納された音声ファイル指向のポインタ</returns>
 SOUNDFILE_IN_MEMBITE* GetSoundFilesInMemBites(const char* fileName);
 #endif // SOUNDBYHAL
 
@@ -167,15 +167,15 @@ SOUNDFILE_IN_MEMBITE* GetSoundFilesInMemBites(const char* fileName);
 #define SOUNDHANDLE_SIZE 8
 
 /// <summary>
-/// �����n���h���z����擾
+/// 音声ハンドル配列を取得
 /// </summary>
-/// <returns>�����n���h���z��Ɏw���̃|�C���^</returns>
+/// <returns>音声ハンドル配列に指向のポインタ</returns>
 SOUND_THREAD_HANDLE* GetSoundHandleArray();
 
 /// <summary>
-/// �g���Ă��Ȃ������n���h�����擾
+/// 使っていない音声ハンドルを取得
 /// </summary>
-/// <returns>�g���Ă��Ȃ������n���h���\���̎w���̃|�C���^</returns>
+/// <returns>使っていない音声ハンドル構造体指向のポインタ</returns>
 SOUND_THREAD_HANDLE* GetSoundHandleThatNotUsing();
 
 #endif // !SOUNDBYHAL

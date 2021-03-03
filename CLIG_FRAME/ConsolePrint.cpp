@@ -1,4 +1,4 @@
-#include "ConsolePrint.h"
+Ôªø#include "ConsolePrint.h"
 #include "DefinedValues.h"
 #include "LogsOutput.h"
 #include "Tools.h"
@@ -48,12 +48,12 @@ void InitOutputBuffer()
     //----------------------------------------------------
     /*CreateUIO("parent", POSITION_2D(3, 20), 60, 15, UIO_DESIGN::STRAIGHT);
     GetUIObjByID(10000)->AddText(UI_TEXT(POSITION_2D(1, 1),
-        (char*)"ÉAÉzÉ}Éì"));
+        (char*)"„Ç¢„Éõ„Éû„É≥"));
     GetUIObjByName("parent")->TurnOn();
     GetUIObjByName("parent")->AddBtn(UI_BUTTON(TEST_OPENSUB, POSITION_2D(3, 3),
-        (char*)"äJÇ≠", BTN_DESIGN::LINE));
+        (char*)"Èñã„Åè", BTN_DESIGN::LINE));
     GetUIObjByName("parent")->AddBtn(UI_BUTTON(0, POSITION_2D(10, 7),
-        (char*)"ï¬Ç∂ÇÈ", BTN_DESIGN::STRAIGHT));
+        (char*)"Èñâ„Åò„Çã", BTN_DESIGN::STRAIGHT));
     SetSelectedBtn(GetUIObjByName("parent")->Buttons + 0);*/
 }
 
@@ -107,7 +107,7 @@ void PrintOutputBuffer()
                 position.X = temp.Position.posX - 2;
                 position.Y = temp.Position.posY;
                 SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), position);
-                printf("Åy%sÅz", temp.Text);
+                printf("„Äê%s„Äë", temp.Text);
             }
         }
         else
@@ -168,12 +168,12 @@ void ShowFPSAtScreen()
     if (fps <= 100)
     {
         WriteStrInt1IntoOutputBufferByPos(POSITION_2D(0, 0),
-            "çXêVópFPS", fps);
+            "Êõ¥Êñ∞Áî®FPS", fps);
     }
     else
     {
         WriteStrIntoOutputBufferByPos(POSITION_2D(0, 0),
-            "çXêVópFPS: 100+");
+            "Êõ¥Êñ∞Áî®FPS: 100+");
     }
 }
 #endif // SHOWFPS

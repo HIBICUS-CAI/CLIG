@@ -1,6 +1,6 @@
-//------------------------------------------------------------------------
-// ƒtƒ@ƒCƒ‹–¼: SceneNode.h
-// ‹@”\: ƒV[ƒ“‚ÉŠÖ‚µ‚Ä‚Ì‹@”\
+ï»¿//------------------------------------------------------------------------
+// ãƒ•ã‚¡ã‚¤ãƒ«å: SceneNode.h
+// æ©Ÿèƒ½: ã‚·ãƒ¼ãƒ³ã«é–¢ã—ã¦ã®æ©Ÿèƒ½
 //------------------------------------------------------------------------
 
 #pragma once
@@ -10,38 +10,38 @@
 #include "DeclaredValues.h"
 
 /// <summary>
-/// ”Ô†‚Å‚ ‚éƒV[ƒ“‚ðŽæ‚èo‚·
+/// ç•ªå·ã§ã‚ã‚‹ã‚·ãƒ¼ãƒ³ã‚’å–ã‚Šå‡ºã™
 /// </summary>
-/// <param name="id">ƒV[ƒ“”Ô†</param>
-/// <returns>Žæ‚èo‚µ‚½‚¢ƒV[ƒ“‚ÉŽwŒü‚Ìƒ|ƒCƒ“ƒ^</returns>
+/// <param name="id">ã‚·ãƒ¼ãƒ³ç•ªå·</param>
+/// <returns>å–ã‚Šå‡ºã—ãŸã„ã‚·ãƒ¼ãƒ³ã«æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</returns>
 SCENENODE* GetSceneNodeByID(int id);
 
 /// <summary>
-/// –¼‘O‚Å‚ ‚éƒV[ƒ“‚ðŽæ‚èo‚·
+/// åå‰ã§ã‚ã‚‹ã‚·ãƒ¼ãƒ³ã‚’å–ã‚Šå‡ºã™
 /// </summary>
-/// <param name="name">ƒV[ƒ“‚Ì–¼‘O</param>
-/// <returns>Žæ‚èo‚µ‚½‚¢ƒV[ƒ“‚ÉŽwŒü‚Ìƒ|ƒCƒ“ƒ^</returns>
+/// <param name="name">ã‚·ãƒ¼ãƒ³ã®åå‰</param>
+/// <returns>å–ã‚Šå‡ºã—ãŸã„ã‚·ãƒ¼ãƒ³ã«æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</returns>
 SCENENODE* GetSceneNodeByName(const char* name);
 
 /// <summary>
-/// ƒV[ƒ“”z—ñ‚ð‰Šú‰»‚·‚é
+/// ã‚·ãƒ¼ãƒ³é…åˆ—ã‚’åˆæœŸåŒ–ã™ã‚‹
 /// </summary>
 void InitSceneNodes();
 
 /// <summary>
-/// ‚ ‚éƒV[ƒ“‚ÌƒJƒƒ‰ƒoƒbƒtƒ@‚ð®—‚·‚é
+/// ã‚ã‚‹ã‚·ãƒ¼ãƒ³ã®ã‚«ãƒ¡ãƒ©ãƒãƒƒãƒ•ã‚¡ã‚’æ•´ç†ã™ã‚‹
 /// </summary>
-/// <param name="sceneNode">ƒV[ƒ“ŽwŒü‚Ìƒ|ƒCƒ“ƒ^</param>
+/// <param name="sceneNode">ã‚·ãƒ¼ãƒ³æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</param>
 void ClearSceneCamBuffer(SCENENODE* sceneNode);
 
 /// <summary>
-/// ƒV[ƒ“”z—ñ‚ÉV‚½‚ÈƒV[ƒ“‚ð’Ç‰Á
+/// ã‚·ãƒ¼ãƒ³é…åˆ—ã«æ–°ãŸãªã‚·ãƒ¼ãƒ³ã‚’è¿½åŠ 
 /// </summary>
-/// <param name="sceneNode">V‚½‚ÈƒV[ƒ“‚Ì“à—e</param>
+/// <param name="sceneNode">æ–°ãŸãªã‚·ãƒ¼ãƒ³ã®å†…å®¹</param>
 void CreateSceneNode(SCENENODE sceneNode);
 
 /// <summary>
-/// ‚ ‚éƒV[ƒ“‚Ì“à—e‚ðXV—pƒoƒbƒtƒ@‚É‘‚«ž‚Þ
+/// ã‚ã‚‹ã‚·ãƒ¼ãƒ³ã®å†…å®¹ã‚’æ›´æ–°ç”¨ãƒãƒƒãƒ•ã‚¡ã«æ›¸ãè¾¼ã‚€
 /// </summary>
-/// <param name="sceneNode">ƒV[ƒ“ŽwŒü‚Ìƒ|ƒCƒ“ƒ^</param>
+/// <param name="sceneNode">ã‚·ãƒ¼ãƒ³æŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</param>
 void DrawScene(SCENENODE* sceneNode);

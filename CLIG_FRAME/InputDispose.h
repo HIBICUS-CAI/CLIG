@@ -1,6 +1,6 @@
-//------------------------------------------------------------------------
-// ƒtƒ@ƒCƒ‹–¼: UIObject.h
-// ‹@”\: ‚t‚hƒAƒCƒeƒ€‚ÉŠÖ‚µ‚Ä‚Ìˆ—
+ï»¿//------------------------------------------------------------------------
+// ãƒ•ã‚¡ã‚¤ãƒ«å: UIObject.h
+// æ©Ÿèƒ½: ï¼µï¼©ã‚¢ã‚¤ãƒ†ãƒ ã«é–¢ã—ã¦ã®å‡¦ç†
 //------------------------------------------------------------------------
 
 #pragma once
@@ -10,49 +10,49 @@
 #include "Structs.h"
 
 /// <summary>
-/// “ü—ÍƒVƒXƒeƒ€‚ð‰Šú‰»‚·‚é
+/// å…¥åŠ›ã‚·ã‚¹ãƒ†ãƒ ã‚’åˆæœŸåŒ–ã™ã‚‹
 /// </summary>
 void InitInputQueue();
 
 /// <summary>
-/// “ü—ÍƒŠƒXƒg‚ðì¬
+/// å…¥åŠ›ãƒªã‚¹ãƒˆã‚’ä½œæˆ
 /// </summary>
-/// <returns>‚h‚m‚sŒ^ƒŠƒXƒg‚Ì\‘¢‘Ìƒ|ƒCƒ“ƒ^</returns>
+/// <returns>ï¼©ï¼®ï¼´åž‹ãƒªã‚¹ãƒˆã®æ§‹é€ ä½“ãƒã‚¤ãƒ³ã‚¿</returns>
 QUEUE_INT* CreateInputQueue();
 
 /// <summary>
-/// “ü—ÍƒVƒXƒeƒ€ŽÀs
+/// å…¥åŠ›ã‚·ã‚¹ãƒ†ãƒ å®Ÿè¡Œ
 /// </summary>
 void Input();
 
 /// <summary>
-/// ‰Ÿ‚³‚ê‚½ƒL[ƒ{[ƒh‚Ìƒ{ƒ^ƒ“‚ðŽæ‚é
+/// æŠ¼ã•ã‚ŒãŸã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ã®ãƒœã‚¿ãƒ³ã‚’å–ã‚‹
 /// </summary>
 void InsertInput();
 
 /// <summary>
-/// ƒ}ƒ‹ƒ`ƒXƒŒƒbƒh‚Å‰Ÿ‚³‚ê‚½ƒL[ƒ{[ƒh‚Ìƒ{ƒ^ƒ“‚ðŽæ‚é
+/// ãƒžãƒ«ãƒã‚¹ãƒ¬ãƒƒãƒ‰ã§æŠ¼ã•ã‚ŒãŸã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ã®ãƒœã‚¿ãƒ³ã‚’å–ã‚‹
 /// </summary>
 void InsertInputMT();
 
 /// <summary>
-/// “ü—ÍƒVƒXƒeƒ€‚ªŽg‚Á‚Ä‚¢‚éƒXƒŒƒbƒh‚ð•Â‚¶‚é
+/// å…¥åŠ›ã‚·ã‚¹ãƒ†ãƒ ãŒä½¿ã£ã¦ã„ã‚‹ã‚¹ãƒ¬ãƒƒãƒ‰ã‚’é–‰ã˜ã‚‹
 /// </summary>
 void TurnOffMTInput();
 
 /// <summary>
-/// Žæ‚ç‚ê‚½ƒ{ƒ^ƒ“‚ðˆ—‚·‚é
+/// å–ã‚‰ã‚ŒãŸãƒœã‚¿ãƒ³ã‚’å‡¦ç†ã™ã‚‹
 /// </summary>
 void DisposeInput();
 
 /// <summary>
-/// ƒ{ƒ^ƒ“‚Ì’l‚É‚æ‚Á‚Ä‹@”\‚ðŽÀs
+/// ãƒœã‚¿ãƒ³ã®å€¤ã«ã‚ˆã£ã¦æ©Ÿèƒ½ã‚’å®Ÿè¡Œ
 /// </summary>
-/// <param name="keyCode">“ü—ÍƒŠƒXƒg‚©‚çŽæ‚èo‚µ‚½’l</param>
+/// <param name="keyCode">å…¥åŠ›ãƒªã‚¹ãƒˆã‹ã‚‰å–ã‚Šå‡ºã—ãŸå€¤</param>
 void DispatchInput(int keyCode);
 
 /// <summary>
-/// “ü—ÍƒŠƒXƒg‚ðŽæ“¾
+/// å…¥åŠ›ãƒªã‚¹ãƒˆã‚’å–å¾—
 /// </summary>
-/// <returns>“ü—ÍƒŠƒXƒgŽwŒü‚Ìƒ|ƒCƒ“ƒ^</returns>
+/// <returns>å…¥åŠ›ãƒªã‚¹ãƒˆæŒ‡å‘ã®ãƒã‚¤ãƒ³ã‚¿</returns>
 QUEUE_INT* GetInputQueue();
