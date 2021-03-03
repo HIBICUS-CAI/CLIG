@@ -9,6 +9,15 @@
 
 #define SCENENODESIZE 20
 
+#define SHOW_TEST1_SUB 0x0003
+#define SHOW_TEST2_SUB 0x0004
+#define SHOW_TEST3_SUB 0x0005
+#define SHOW_TEST4_SUB 0x0006
+#define CLOSE_TEST1_SUB 0x0007
+#define CLOSE_TEST2_SUB 0x0008
+#define CLOSE_TEST3_SUB 0x0009
+#define CLOSE_TEST4_SUB 0x000a
+
 /// <summary>
 /// シーン配列を取得
 /// </summary>

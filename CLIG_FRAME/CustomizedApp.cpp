@@ -21,6 +21,21 @@ void AppUpdate()
 
     switch (GetSceneFlag())
     {
+    case TESTSCENEFLAG:
+    {
+        char stringTemp[55] = "";
+        strcpy_s(stringTemp, sizeof(stringTemp),
+            "showing this string in the test scene's camera buffer");
+        GetSceneNodeByName("test")->WriteStrToCamBuffer(
+            POSITION_2D(
+                GetSceneNodeByName("test")->GetCamAddr()->CameraWidth / 2 - strlen(stringTemp) / 2,
+                GetSceneNodeByName("test")->GetCamAddr()->CameraHeight / 2
+            ),
+            stringTemp
+        );
+        break;
+    }
+
     default:
         break;
     }
@@ -47,6 +62,10 @@ void AppButtonEvent(int value)
 {
     switch (GetSceneFlag())
     {
+    case TESTSCENEFLAG:
+        RunButtonEventInTestScene(value);
+        break;
+
     default:
         break;
     }

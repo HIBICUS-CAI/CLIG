@@ -12,23 +12,16 @@ void InitTestScene()
     CreateSceneNode(SCENENODE("test", NULL,
         SCENECAMERA(POSITION_2D(1, 1), CONSOLE_WIDTH - 2, CONSOLE_HEIGHT - 2)));
     GetSceneNodeByName("test")->SetBaseUIO(
+#ifdef SHOW_SAMPLE_UIOBJECT
+        GetUIObjByName("sample"));
+#else
         GetUIObjByName("empty"));
+#endif // SHOW_SAMPLE_UIOBJECT
 }
 
 void UpdateTestScene()
 {
     ClearSceneCamBuffer(GetSceneNodeByName("test"));
-
-    char stringTemp[55] = "";
-    strcpy_s(stringTemp, sizeof(stringTemp),
-        "showing this string in the test scene's camera buffer");
-    GetSceneNodeByName("test")->WriteStrToCamBuffer(
-        POSITION_2D(
-            GetSceneNodeByName("test")->GetCamAddr()->CameraWidth / 2 - strlen(stringTemp) / 2,
-            GetSceneNodeByName("test")->GetCamAddr()->CameraHeight / 2
-        ),
-        stringTemp
-    );
 }
 
 void TurnOffTestScene()
